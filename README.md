@@ -15,5 +15,5 @@ My personal portfolio
 ##      VERSION 1      ##
 #########################
 
-  - [] Set up react and get all files and folders in order
+  - [ ] Set up react and get all files and folders in order
   

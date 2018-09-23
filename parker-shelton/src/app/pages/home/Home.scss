@@ -1,0 +1,48 @@
+@import '../../Global.scss';
+
+body {
+  background-color: $lightGrey;  //Fallback for browsers without gradient support
+  background-image: url('../img/background.png'); //Fallback for browsers without gradient support
+  background-image: url('../img/background.png'), linear-gradient(to bottom, $lightGrey 30%, $mediumGrey);
+  background-size: 5%;
+}
+
+.Home {
+  width: 100%;
+  // height: 100%;
+  height: 2000px;
+
+  .hero {
+    width: 100%;
+    height: 200px;
+    padding-top: 20px;
+    background-color: $white;
+
+    h1 {
+      width: 100%;
+      font-size: 80px;
+      text-align: center;
+    }
+
+    .titles {
+      display: flex;
+      justify-content: space-between;
+      width: 450px;
+      height: 40px;
+      margin: auto;
+      margin-top: 20px;
+      // background-color: blue;
+
+      p {
+        align-self: center;
+        font-size: 25px;
+        margin: 0 10px 0 10px;
+      }
+
+      .vLine {
+        width: 2px;
+        background-color: #000;
+      } 
+    }
+  }
+}

@@ -17,7 +17,7 @@ My personal portfolio
 ##      VERSION 1      ##
 #########################
 
-  - [ ] Set up react and get all files and folders in order
-  - [ ] Get nav links and routes set up
-  - [ ] Create header with 4 links and my face in a circle lol
-  - [ ] Make my name and title under it
+  - [X] Set up react and get all files and folders in order
+  - [X] Get nav links and routes set up
+  - [X] Create header with 4 links
+  - [X] Make my name and title under it

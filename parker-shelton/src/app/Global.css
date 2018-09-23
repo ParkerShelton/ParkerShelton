@@ -45,28 +45,3 @@ table {
   box-sizing: border-box;
   color: inherit;
   text-decoration: none; }
-
-.Header {
-  width: 100%;
-  height: 150px;
-  background-color: #fff; }
-  .Header .headerContainer {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    height: 100%;
-    margin: auto;
-    padding-top: 10px; }
-    .Header .headerContainer ul {
-      display: flex;
-      justify-content: space-around;
-      width: 35%; }
-      .Header .headerContainer ul li {
-        align-self: center;
-        width: 30%;
-        height: 30px;
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center; }
-    .Header .headerContainer img {
-      width: 150px; }

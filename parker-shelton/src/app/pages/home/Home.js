@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import name from './img/name.png';
 import './Home.css';
 
 class Home extends Component {
@@ -18,7 +17,16 @@ class Home extends Component {
           </div>
         </div>
 
+        <div className="projectContainer">
+          <div className="workContainer">
 
+            <div className="project"></div>
+            <div className="project"></div>
+            <div className="project"></div>
+            <div className="project"></div>
+
+          </div>
+        </div>
 
       </div>
     );

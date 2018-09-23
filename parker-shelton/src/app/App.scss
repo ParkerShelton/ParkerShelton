@@ -1,0 +1,8 @@
+@import './Global.scss';
+
+body {
+  // background-color: $lightGrey;  //Fallback for browsers without gradient support
+  // background-image: url('./pages/img/background.png'); //Fallback for browsers without gradient support
+  background-image: url('./img/background.png'), linear-gradient(to bottom, $lightGrey 30%, $mediumGrey);
+  background-size: 5%;  
+}

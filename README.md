@@ -21,3 +21,15 @@ My personal portfolio
   - [X] Get nav links and routes set up
   - [X] Create header with 4 links
   - [X] Make my name and title under it
+
+
+#########################
+##      VERSION 2      ##
+#########################
+
+  - [X] Get project gallery template laid out
+  - [ ] Create each page, without too much stylizing yet
+  - [ ] Add my profile picture
+  - [ ] Design and create footer
+  - [ ] Make contact form (eventually the data of the submitted form will be stored in a db)
+

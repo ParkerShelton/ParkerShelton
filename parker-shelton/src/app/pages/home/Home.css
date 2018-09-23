@@ -46,12 +46,6 @@ table {
   color: inherit;
   text-decoration: none; }
 
-body {
-  background-color: #f2f2f2;
-  background-image: url("../img/background.png");
-  background-image: url("../img/background.png"), linear-gradient(to bottom, #f2f2f2 30%, #aaaaaa);
-  background-size: 5%; }
-
 .Home {
   width: 100%;
   height: 2000px; }
@@ -78,3 +72,18 @@ body {
       .Home .hero .titles .vLine {
         width: 2px;
         background-color: #000; }
+  .Home .projectContainer {
+    width: 100%;
+    margin-top: 20px; }
+    .Home .projectContainer .workContainer {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: auto; }
+      .Home .projectContainer .workContainer .project {
+        width: 500px;
+        height: 350px;
+        margin-top: 50px;
+        border: 2px solid #000;
+        background-color: blue; }

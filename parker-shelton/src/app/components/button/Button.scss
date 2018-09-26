@@ -1,0 +1,33 @@
+@import '../../Global.scss';
+
+
+.Button {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  
+  &:hover {
+    border-radius: 10px;
+    background-color: $darkGrey;
+  }
+  &:hover button {
+    color: $darkGrey;
+  }
+  
+  button {
+    width: 100px;
+    height: 50px;
+    background-color: $white;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: $mediumGrey;
+
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}

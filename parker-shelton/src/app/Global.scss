@@ -2,11 +2,23 @@
 //            Colors             //
 ///////////////////////////////////
 
-$white: #fff;
-$lightGrey: #f2f2f2;
-$mediumGrey: #aaaaaa;
+$pink: #f05d5e;         // SUNSET ORANGE
+$white: #f2f2f2;        // ANTI-FLASH WHITE
+$lightGrey: #d6d4d8;    // LIGHT GRAY
+$mediumGrey: #6d6a75;   // DIM GRAY
+$darkGrey: #37323e;     // ONYX
 
 
+
+///////////////////////////////////
+//            Fonts              //
+///////////////////////////////////
+
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One|Roboto+Slab|Vast+Shadow');
+
+$bowlby: 'Bowlby One';
+$shadow: 'Vast Shadow';
+$roboto: 'Roboto Slab';
 
 
 html, body, div, span, applet, object, iframe,
@@ -53,11 +65,37 @@ table {
 	border-spacing: 0;
 }
 
+input, button {
+  border: none; 
+  outline: none;
+} 
+
 * {
   box-sizing: border-box;
   color: inherit;
   text-decoration: none;
-
+  font-family: $roboto;
 }
+body {
+  font-family: $roboto;
+  box-sizing: border-box;
 
+
+  .hl {
+    width: 500px;
+    height: 2px;
+    margin: auto;
+    margin-top: 60px;
+    background-color: $darkGrey;
+  }  
+
+  .customInput {
+    height: 30px;
+    border: $darkGrey solid 2px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: $white;
+    color: $darkGrey;
+  }
+}
 

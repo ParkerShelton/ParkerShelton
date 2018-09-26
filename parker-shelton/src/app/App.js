@@ -6,7 +6,9 @@ import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import Blog from './pages/blog/Blog';
+
 import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
 class App extends Component {
   render() {
@@ -23,7 +25,7 @@ class App extends Component {
             <Route component={Error} />
           </Switch>
 
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </BrowserRouter>
     );

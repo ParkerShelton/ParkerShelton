@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One|Roboto+Slab|Vast+Shadow");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, button {
+  border: none;
+  outline: none; }
+
+* {
+  box-sizing: border-box;
+  color: inherit;
+  text-decoration: none;
+  font-family: "Roboto Slab"; }
+
+body {
+  font-family: "Roboto Slab";
+  box-sizing: border-box; }
+  body .hl {
+    width: 500px;
+    height: 2px;
+    margin: auto;
+    margin-top: 60px;
+    background-color: #37323e; }
+  body .customInput {
+    height: 30px;
+    border: #37323e solid 2px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #37323e; }
+
+.Button {
+  display: flex;
+  width: 150px;
+  height: 50px; }
+  .Button:hover {
+    border-radius: 10px;
+    background-color: #37323e; }
+  .Button:hover button {
+    color: #37323e; }
+  .Button button {
+    width: 100px;
+    height: 50px;
+    background-color: #f2f2f2;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #6d6a75; }
+  .Button img {
+    width: 50px;
+    height: 50px; }

@@ -5,10 +5,13 @@
   display: flex;
   width: 150px;
   height: 50px;
+  transition: all 0.1s ease-in-out;
   
   &:hover {
     border-radius: 10px;
     background-color: $darkGrey;
+    // box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.01);
+    transform: scale(1.08);
   }
   &:hover button {
     color: $darkGrey;
@@ -23,7 +26,6 @@
     font-size: 14px;
     font-weight: bold;
     color: $mediumGrey;
-
   }
 
   img {

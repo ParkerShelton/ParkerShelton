@@ -2,13 +2,6 @@ import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
-import profile from './img/profile.png';
-import phone from './img/phone.png';
-import email from './img/email.png';
-import google from './img/google.png';
-import linkedIn from './img/linkedIn.png';
-import info from './img/info.png';
-
 import Button from '../button/Button';
 import './Footer.css';
 
@@ -28,25 +21,25 @@ class Footer extends Component {
       <div className="Footer">
         <div className="column1">
           <div className="contactInfo">
-            <img className="ciImg" alt="Contact Info" src={info} />
+            <img className="ciImg" alt="Contact Info" src={"/img/footer/info.png"} />
             <p className="ciTxt">Contact Info</p>
           </div>
 
           <ul className="contactList">
             <li>
               <CopyToClipboard text="7542655665" onCopy={(text) => this.clipboard(text)}>
-                <img src={phone} alt="Phone" />
+                <img src={"/img/footer/phone.png"} alt="Phone" />
               </CopyToClipboard>
             </li>
 
             <li>
               <CopyToClipboard text="parkerkshelton@gmail.com" onCopy={(text) => this.clipboard(text)}>
-                <img src={email} alt="Email" />
+                <img src={"/img/footer/email.png"} alt="Email" />
               </CopyToClipboard>              
             </li>
 
-            <li><a href="https://plus.google.com/107301490763509617943" target="_blank" rel="noopener noreferrer"> <img src={google} alt="Google" /> </a></li>
-            <li><a href="https://www.linkedin.com/in/parker-shelton-296179168/" target="_blank" rel="noopener noreferrer"> <img src={linkedIn} alt="LinkedIn" /> </a></li>
+            <li><a href="https://plus.google.com/107301490763509617943" target="_blank" rel="noopener noreferrer"> <img src={"/img/footer/google.png"} alt="Google" /> </a></li>
+            <li><a href="https://www.linkedin.com/in/parker-shelton-296179168/" target="_blank" rel="noopener noreferrer"> <img src={"/img/footer/linkedIn.png"} alt="LinkedIn" /> </a></li>
           </ul>
         </div>
 
@@ -56,7 +49,7 @@ class Footer extends Component {
               <p>Developer</p>
               <div className="vLine" />
               <p>Artist</p>
-              <div cla  ssName="vLine" />
+              <div className="vLine" />
               <p>Musician</p>
             </div>
 
@@ -71,7 +64,7 @@ class Footer extends Component {
         </div>
 
         <div className="column3">
-          <img alt="Profile" src={profile} />
+          <img alt="Profile" src={"/img/footer/profile.png"} />
         </div>        
 
         <div className="row">

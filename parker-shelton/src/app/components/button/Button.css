@@ -54,39 +54,42 @@ input, button {
 
 body {
   font-family: "Roboto Slab";
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #fff; }
   body .hl {
     width: 500px;
     height: 2px;
     margin: auto;
     margin-top: 60px;
-    background-color: #37323e; }
+    background-color: #222629; }
   body .customInput {
     height: 30px;
-    border: #37323e solid 2px;
+    border: #222629 solid 2px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    background-color: #f2f2f2;
-    color: #37323e; }
+    background-color: #fff;
+    color: #222629; }
 
 .Button {
   display: flex;
   width: 150px;
-  height: 50px; }
+  height: 50px;
+  transition: all 0.1s ease-in-out; }
   .Button:hover {
     border-radius: 10px;
-    background-color: #37323e; }
+    background-color: #222629;
+    transform: scale(1.08); }
   .Button:hover button {
-    color: #37323e; }
+    color: #222629; }
   .Button button {
     width: 100px;
     height: 50px;
-    background-color: #f2f2f2;
+    background-color: #fff;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     font-size: 14px;
     font-weight: bold;
-    color: #6d6a75; }
+    color: #474b4f; }
   .Button img {
     width: 50px;
     height: 50px; }

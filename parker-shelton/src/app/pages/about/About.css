@@ -54,17 +54,190 @@ input, button {
 
 body {
   font-family: "Roboto Slab";
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #fff; }
   body .hl {
     width: 500px;
     height: 2px;
     margin: auto;
     margin-top: 60px;
-    background-color: #37323e; }
+    background-color: #222629; }
   body .customInput {
     height: 30px;
-    border: #37323e solid 2px;
+    border: #222629 solid 2px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    background-color: #f2f2f2;
-    color: #37323e; }
+    background-color: #fff;
+    color: #222629; }
+
+.About {
+  /*########################################*/
+  /*              TOP SECTION               */
+  /*########################################*/
+  /*########################################*/
+  /*             MIDDLE SECTION             */
+  /*########################################*/
+  /*########################################*/
+  /*             BOTTOM SECTION             */
+  /*########################################*/ }
+  .About .hero {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin-top: 200px;
+    color: #fff;
+    background-color: #474b4f;
+    border-top: 20px solid #222629;
+    border-bottom: 20px solid #222629; }
+    .About .hero .heroMargin {
+      display: flex;
+      position: relative;
+      width: 80%;
+      margin: auto; }
+      .About .hero .heroMargin .heroPic {
+        position: absolute;
+        align-self: center;
+        width: 450px;
+        height: 550px;
+        border: 5px solid #a0e540; }
+      .About .hero .heroMargin .heroTxtContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 550px;
+        height: 350px;
+        align-self: center;
+        margin-left: auto; }
+        .About .hero .heroMargin .heroTxtContainer h1 {
+          width: 100%;
+          text-align: center;
+          font-size: 70px; }
+        .About .hero .heroMargin .heroTxtContainer p {
+          width: 85%;
+          align-self: center;
+          text-align: center;
+          font-size: 28px;
+          line-height: 40px;
+          margin-top: 20px; }
+  .About .middleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 850px;
+    margin-top: 100px; }
+    .About .middleContainer .topHalf {
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+      width: 80%;
+      height: 48%; }
+      .About .middleContainer .topHalf .childhoodContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 35%;
+        height: 100%; }
+        .About .middleContainer .topHalf .childhoodContainer h2 {
+          width: 90%;
+          height: 70px;
+          align-self: center;
+          padding-top: 10px;
+          font-size: 35px;
+          font-weight: bold;
+          text-align: center; }
+        .About .middleContainer .topHalf .childhoodContainer p {
+          width: 90%;
+          height: 75%;
+          align-self: center;
+          font-size: 22px;
+          text-align: center; }
+      .About .middleContainer .topHalf .hobbiesContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 60%;
+        height: 100%; }
+        .About .middleContainer .topHalf .hobbiesContainer h2 {
+          width: 60%;
+          height: 70px;
+          align-self: center;
+          text-align: center;
+          font-size: 45px;
+          font-weight: bold; }
+        .About .middleContainer .topHalf .hobbiesContainer p {
+          width: 85%;
+          height: 75%;
+          align-self: center;
+          text-align: center;
+          font-size: 23px; }
+    .About .middleContainer .bottomHalf {
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+      width: 80%;
+      height: 48%; }
+      .About .middleContainer .bottomHalf p {
+        width: 60%;
+        height: 85%;
+        align-self: center;
+        border: 5px solid #000; }
+      .About .middleContainer .bottomHalf .familyImg {
+        width: 35%;
+        border: 5px solid #a0e540; }
+  .About .bottomContainer {
+    width: 100%;
+    height: 600px;
+    margin-top: 80px; }
+    .About .bottomContainer .margin {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      height: 100%;
+      margin: auto; }
+      .About .bottomContainer .margin .map {
+        align-self: center;
+        width: 550px;
+        height: 550px;
+        border: 5px solid #a0e540; }
+        .About .bottomContainer .margin .map img {
+          width: 100%;
+          height: 100%; }
+      .About .bottomContainer .margin .locationList {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 650px;
+        height: 100%; }
+        .About .bottomContainer .margin .locationList .location {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          height: 23%; }
+          .About .bottomContainer .margin .locationList .location img {
+            align-self: center;
+            width: 90px;
+            height: 90px; }
+          .About .bottomContainer .margin .locationList .location p {
+            align-self: center;
+            width: 85%;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px; }
+  .About .resumeContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px; }
+    .About .resumeContainer h2 {
+      width: 100%;
+      font-size: 80px;
+      text-align: center; }
+    .About .resumeContainer img {
+      width: 60%;
+      min-width: 50%;
+      margin: auto;
+      margin-top: 50px;
+      border: 5px solid #a0e540; }

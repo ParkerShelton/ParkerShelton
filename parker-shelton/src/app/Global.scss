@@ -2,11 +2,12 @@
 //            Colors             //
 ///////////////////////////////////
 
-$pink: #f05d5e;         // SUNSET ORANGE
-$white: #f2f2f2;        // ANTI-FLASH WHITE
-$lightGrey: #d6d4d8;    // LIGHT GRAY
-$mediumGrey: #6d6a75;   // DIM GRAY
-$darkGrey: #37323e;     // ONYX
+$green: #a0e540;
+$white: #fff;
+$superLightGrey: #a4a6a8;
+$lightGrey: #6b6e70;
+$mediumGrey: #474b4f;
+$darkGrey: #222629;
 
 
 
@@ -79,6 +80,7 @@ input, button {
 body {
   font-family: $roboto;
   box-sizing: border-box;
+  color: $white;
 
 
   .hl {
@@ -97,5 +99,6 @@ body {
     background-color: $white;
     color: $darkGrey;
   }
+
 }
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
-import profile from './img/profile.png';
 import './Header.css';
 
 class Header extends Component {
@@ -19,11 +18,11 @@ class Header extends Component {
             <li onClick={this.reloadPage}><NavLink to="/about">About</NavLink></li>
           </ul>
 
-          <img alt="Profile" src={profile} />
-
+          <img alt="Profile" src={"/img/header/profile.png"} />
+          
           <ul>
             <li onClick={this.reloadPage}><NavLink to="/contact">Contact</NavLink></li>
-            <li onClick={this.reloadPage}><NavLink to="/blog">Blog</NavLink></li>
+            {/* <li onClick={this.reloadPage}><NavLink to="/blog">Blog</NavLink></li> */}
           </ul>        
         </div>
 

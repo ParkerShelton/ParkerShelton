@@ -9,10 +9,11 @@ class Contact extends Component {
 
     this.state = {
       isVerified: false,
-      message: {
+      showModal: false,
+      email: {
         name: "",
         business: "",
-        email: "",
+        emailAdd: "",
         phone: "",
         subject: "",
         noSpam: "",
@@ -26,16 +27,16 @@ class Contact extends Component {
   }
 
   handleChange = (e,input) => {
-    let message = this.state.message;
+    let email = this.state.email;
 
     if(input === "name") {
-      message.name = e.target.value;
+      email.name = e.target.value;
 
     } else if(input === "business") {
-      message.business = e.target.value;
+      email.business = e.target.value;
 
-    } else if(input === "email") {
-      message.email = e.target.value;
+    } else if(input === "emailAdd") {
+      email.emailAdd = e.target.value;
 
     } else if(input === "phone") {
       if(isNaN(e.target.value)) {
@@ -43,30 +44,78 @@ class Contact extends Component {
       } else if(e.target.value.length > 7) {
         e.target.value = e.target.value;
       } else {
-        message.phone = e.target.value;
+        email.phone = e.target.value;
       }
 
     } else if(input === "subject") {
-      message.subject = e.target.value;
+      email.subject = e.target.value;
 
     } else if(input === "noSpam") {
-      message.noSpam = e.target.value;
+      email.noSpam = e.target.value;
 
     } else if(input === "message") {
-      message.message = e.target.value;
+      email.message = e.target.value;
     }
 
-    this.setState({message});
+    this.setState({email});
   }
 
   handleSubmit = (e) => {
+
     e.preventDefault();
-    if(this.state.isVerified) {
-      console.log(this.state.message);
+
+    // eslint-disable-next-line
+    if((this.state.isVerified) && (this.state.email.noSpam == 8)) {
+      console.log("Loading Modal");
+      this.setState({showModal: true});
+      this.emailOutline();
+      
     } else {
-      alert("Please verify you are human!");
+      if(!this.state.isVerified) {
+        alert("Please verify you are human!");
+
+      } else {
+        alert(`2 + 6 is not equal to ${this.state.email.noSpam}. Try again please!`);
+
+      }
     }
   }
+
+
+  emailOutline = () => {
+    let address = "parkerkshelton@gmail.com";
+    let subject = this.state.email.subject;
+    var ending;
+
+    if(this.state.email.business === "" && this.state.email.phone !== "") {
+      ending = `- ${this.state.email.name}, you can email me at ${this.state.email.emailAdd} or call me at ${this.state.email.phone}.`;
+
+    } else if (this.state.email.business !== "" && this.state.email.phone === "") {
+      ending = `- ${this.state.email.name} from ${this.state.email.business}, you can email me at ${this.state.email.emailAdd}.`;
+      
+    } else if(this.state.email.business === "" && this.state.email.phone === "") {
+      ending = `- ${this.state.email.name} from ${this.state.email.business}.`;
+
+    } else if (this.state.email.business !== "" && this.state.email.phone !== "") {
+      ending = `- ${this.state.email.name} from ${this.state.email.business}, you can email me at ${this.state.email.emailAdd} or call me at ${this.state.email.phone}.`;
+
+    }
+
+    let body = `Dear Parker, \r\n ${this.state.email.message} \r\n ${ending}`;
+    body = encodeURIComponent(body);
+
+    let email = `<a href="mailto:${address}?subject=${subject}&body=${body}">Send Email<a>`;
+    document.write(email);
+
+    // if(this.state.showModal) {
+    //   // return (<Modal showModal={this.state.showModal} emailMsg={email} emailBody={body} emailObj={this.state.email}/>);
+      
+    // } else {
+    //   return null
+    // }
+  }
+
+
 
   verifyCallback = (res) => {
     if(res) {
@@ -76,6 +125,7 @@ class Contact extends Component {
 
 
   render() {
+
     return (
       <div className="Contact">
         <div className="hero">
@@ -84,37 +134,40 @@ class Contact extends Component {
           <p>I can't wait to hear from you!</p>
         </div>
         
+        {/* {this.emailOutline()} */}
+        {/* {`mailto:${address}?subject=${subject}&body=${body}`} */}
+
         <form onSubmit={(e) => this.handleSubmit(e)}>
           {/* TOP HALF */}
           <div className="inputs">
             <div className="row">
               <div className="nameContain">
                 <label htmlFor="name">Name *</label>
-                <input value={this.state.message.name} onChange={(e) => this.handleChange(e, "name")} name="name" className="name customInput" required/>
+                <input value={this.state.email.name} onChange={(e) => this.handleChange(e, "name")} name="name" className="name customInput" required/>
               </div>
 
               <div className="businessContain">
                 <label htmlFor="business">Business Name</label>
-                <input value={this.state.message.business} onChange={(e) => this.handleChange(e, "business")} name="business" className="business customInput" />
+                <input value={this.state.email.business} onChange={(e) => this.handleChange(e, "business")} name="business" className="business customInput" />
               </div>
             </div>
 
             <div className="row">
-              <div className="messageContain">
-                <label htmlFor="message">message *</label>
-                <input type="message" value={this.state.message.email} onChange={(e) => this.handleChange(e, "email")} name="message" className="message customInput" required/>
+              <div className="emailContain">
+                <label htmlFor="email">Email *</label>
+                <input type="email" value={this.state.email.emailAdd} onChange={(e) => this.handleChange(e, "emailAdd")} name="email" className="email customInput" required/>
               </div>
 
               <div className="phoneContain">
                 <label htmlFor="phone">Phone Number</label>
-                <input type="tel" value={this.state.message.phone} onChange={(e) => this.handleChange(e, "phone")} name="phone" className="phone customInput" />
+                <input type="tel" value={this.state.email.phone} onChange={(e) => this.handleChange(e, "phone")} name="phone" className="phone customInput" />
               </div>
             </div>
 
             <div className="row">
               <div className="subjectContain">
                 <label htmlFor="subject">Subject *</label>
-                <input value={this.state.message.subject} onChange={(e) => this.handleChange(e, "subject")} name="subject" className="subject customInput" required/>
+                <input value={this.state.email.subject} onChange={(e) => this.handleChange(e, "subject")} name="subject" className="subject customInput" required/>
               </div>
             </div>
           </div>
@@ -124,7 +177,7 @@ class Contact extends Component {
             <div className="verifyContain">
               <div className="noSpamContain">
                 <label htmlFor="noSpam">(2 + 6 = ?) *</label>
-                <input value={this.state.message.noSpam} onChange={(e) => this.handleChange(e, "noSpam")} name="noSpam" className="noSpam customInput" required/>
+                <input value={this.state.email.noSpam} onChange={(e) => this.handleChange(e, "noSpam")} name="noSpam" className="noSpam customInput" required/>
               </div>
 
               <div className="captcha">
@@ -140,11 +193,11 @@ class Contact extends Component {
 
             <div className="messageContain">
               <label htmlFor="message">Message *</label>
-              <textarea value={this.state.message.message} onChange={(e) => this.handleChange(e, "message")} name="message" className="message customInput" required/>
+              <textarea value={this.state.email.message} onChange={(e) => this.handleChange(e, "message")} name="message" className="message customInput" required/>
             </div>
 
             <div className="buttonContain">
-              <Button type="submit" text="Send Message"/>
+              <Button type="submit" text="Create Email"/>
             </div>
           </div>
         </form>        

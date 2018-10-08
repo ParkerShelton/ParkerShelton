@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import arrow from './img/contactArrow.png';
 import './Button.css';
 
 class Button extends Component {
@@ -8,7 +7,7 @@ class Button extends Component {
       <div className="Button">
         <button onClick={this.props.reloadPage} type={this.props.type}>{this.props.text}</button>
 
-        <img alt="Arrow" src={arrow}/>
+        <img alt="Arrow" src={"/img/button/contactArrow.png"}/>
       </div>
     );
   }

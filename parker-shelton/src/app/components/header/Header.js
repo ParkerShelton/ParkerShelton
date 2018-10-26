@@ -14,7 +14,7 @@ class Header extends Component {
         
         <div className="headerContainer">
           <ul>
-            <li onClick={this.reloadPage}><NavLink to="/">Home</NavLink></li>
+            <li onClick={this.reloadPage}><NavLink to="/home">Home</NavLink></li>
             <li onClick={this.reloadPage}><NavLink to="/about">About</NavLink></li>
           </ul>
 

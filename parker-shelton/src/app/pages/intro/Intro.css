@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One|Roboto+Slab|Vast+Shadow");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, button {
+  border: none;
+  outline: none; }
+
+* {
+  box-sizing: border-box;
+  color: inherit;
+  text-decoration: none;
+  font-family: "Roboto Slab"; }
+
+body {
+  font-family: "Roboto Slab";
+  box-sizing: border-box;
+  color: #fff;
+  height: 100%; }
+  body .hl {
+    width: 500px;
+    height: 2px;
+    margin: auto;
+    margin-top: 60px;
+    background-color: #222629; }
+  body .customInput {
+    height: 30px;
+    border: #222629 solid 2px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: #fff;
+    color: #222629; }
+
+@keyframes nameFade {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes heroFade {
+  from {
+    transform: scale(0);
+    opacity: 0; }
+  to {
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes line1 {
+  0% {
+    margin-left: -1000px; }
+  80% {
+    margin-left: -1000px; }
+  100% {
+    margin: 0; } }
+
+@keyframes line2 {
+  0% {
+    margin-right: -1000px; }
+  80% {
+    margin-right: -1000px; }
+  100% {
+    margin: 0; } }
+
+@keyframes initials {
+  0% {
+    opacity: 0; }
+  90% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes icons {
+  0% {
+    transform: translateY(100px); }
+  80% {
+    transform: translateY(100px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes button {
+  0% {
+    opacity: 0; }
+  60% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.Intro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+  .Intro .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px; }
+    .Intro .container a {
+      width: 250px;
+      margin: auto; }
+    .Intro .container .heroImg {
+      width: 250px;
+      height: 250px;
+      animation-name: heroFade;
+      animation-duration: 1s; }
+    .Intro .container h1 {
+      margin-top: 40px;
+      font-size: 50px;
+      font-family: "Vast Shadow";
+      transform: scaleY(1.5);
+      animation-name: nameFade;
+      animation-duration: 2s; }
+  .Intro .lineContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px; }
+    .Intro .lineContainer .line {
+      align-self: center;
+      width: 35%;
+      height: 5px;
+      background-color: #a4a6a8;
+      animation-name: line1;
+      animation-duration: 2s; }
+    .Intro .lineContainer .line.left {
+      animation-name: line1;
+      animation-duration: 2s; }
+    .Intro .lineContainer .line.right {
+      animation-name: line2;
+      animation-duration: 2s; }
+    .Intro .lineContainer p {
+      font-size: 40px;
+      font-family: "Roboto Slab";
+      color: #a4a6a8;
+      animation-name: initials;
+      animation-duration: 2s; }
+  .Intro .Button {
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    animation-name: button;
+    animation-duration: 6s; }
+  .Intro .iconContainer {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-self: center;
+    width: 300px;
+    bottom: 10px; }
+    .Intro .iconContainer img {
+      width: 50px;
+      height: 50px; }
+      .Intro .iconContainer img:hover {
+        background-color: #222629;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+        transform: scale(1.1); }
+    .Intro .iconContainer .iconOne {
+      animation-name: icons;
+      animation-duration: 3.5s; }
+    .Intro .iconContainer .iconTwo {
+      animation-name: icons;
+      animation-duration: 4s; }
+    .Intro .iconContainer .iconThree {
+      animation-name: icons;
+      animation-duration: 3.2s; }
+    .Intro .iconContainer .iconFour {
+      animation-name: icons;
+      animation-duration: 4.2s; }

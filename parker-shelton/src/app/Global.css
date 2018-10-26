@@ -55,7 +55,8 @@ input, button {
 body {
   font-family: "Roboto Slab";
   box-sizing: border-box;
-  color: #fff; }
+  color: #fff;
+  height: 100%; }
   body .hl {
     width: 500px;
     height: 2px;

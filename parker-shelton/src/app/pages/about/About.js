@@ -45,13 +45,24 @@ class About extends Component {
           </div>            
         </section>
 
+        <section className="commentContainer">
+          <div className="comment">
+            <img src="/img/about/startQuote.png" alt="Start Quote"/>
+          
+            <p>I know that this is a portfolio site and I'm supposed to show off all the things I've done and my talents or whatever, but one thing I really want to do is help others. Road to Hire has given me an opportunity that most people aren't lucky enough to have. I feel that just because I was fortunate enough to get the tools and support I have, that doesn't mean that others can't benefit from it aswell. I encourage anyone that feels like they can't do something, for whatever reason, to contact me and let me see what I can do. To help out as much as I can, I plan on creating a blog that will teach people how to accomplish some of the things I've done. There will be comments so people can ask questions, step by step instructions, and every mistake I made to show others that everyone makes mistakes. I may not be the most qualified person in the world but I will try my hardest and that's the first step to success.
+            </p>
+
+            <img src="/img/about/endQuote.png" alt="End Quote"/>
+          </div>
+        </section>
+
       {/*#########################################*/}
       {/*             BOTTOM SECTION              */}
       {/*#########################################*/}
         <section className="bottomContainer">
           <div className="margin">
             <div className="map">
-              <img src="/img/about/map.jpg" />
+              <img alt="Map" src="/img/about/map.jpg" />
             </div>
 
             <ul className="locationList">

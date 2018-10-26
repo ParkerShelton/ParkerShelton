@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "name": "E-commerce Website",
+    "img": ["/img/home/e-commerce/e-commerce.jpg", "/img/home/e-commerce/productsTitle.jpg", "/img/home/e-commerce/productsList.jpg", "/img/home/e-commerce/contactForm.jpg", "/img/home/e-commerce/admin.jpg"],
+    "desc": "This project is the final project for Road to Hire. We had to create a database full of projects and fetch them to display on the front end. We also had to create the whole front-end. After we got that, we had to create an admin page that will allow you to add/remove/edit the products. Our contact page had to also save all the contacts to a database that will display on the admin page. After all of that we had to authenticate for the admin page so only admins can see the admin page."
+  },
+  {
+    "id": 1,
+    "name": "Gateway Project",
+    "img": ["/img/home/gatewayProject/gatewayProject.jpg"],
+    "desc": ""
+  },
+    {
+    "id": 2,
+    "name": "My Move",
+    "img": ["/img/home/mymove/mymove.jpg"],
+    "desc": "This project was a midterm test for Road to Hire. We were given a sketch file of an old version if the My Move website. The goal was to recreate the sketch file with html and css as close a pixel perfect as possoble."
+  },
+  {
+    "id": 3,
+    "name": "Architecture",
+    "img": ["/img/home/architecture/slide1.png", "/img/home/architecture/slide2.png", "/img/home/architecture/slide3.png"],
+    "desc": ""
+  },
+  {
+    "id": 4,
+    "name": "Bot-O-Mat",
+    "img": ["/img/home/botomat/botomat1.png", "/img/home/botomat/botomat2.png", "/img/home/botomat/botomat3.png", "/img/home/botomat/botomat4.png"],
+    "desc": ""
+  },
+  {
+    "id": 5,
+    "name": "React Guessing Game",
+    "img": ["/img/home/guessingGame/guessingGame1.png", "/img/home/guessingGame/guessingGame2.png", "/img/home/guessingGame/guessingGame3.png", "/img/home/guessingGame/guessingGame4.png"],
+    "desc": ""
+  }    
+]

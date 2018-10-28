@@ -1,8 +1,7 @@
 # Parker Shelton Portfolio
 
-![GitHub version](https://img.shields.io/badge/version-4.0.1-blue.svg)
+![GitHub version](https://img.shields.io/badge/version-4.0.2-blue.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg)
-[![GitHub license](https://img.shields.io/github/license/ParkerShelton/ParkerShelton.svg)](https://github.com/ParkerShelton/ParkerShelton)
 [![GitHub issues](https://img.shields.io/github/issues/ParkerShelton/ParkerShelton.svg)](https://github.com/ParkerShelton/ParkerShelton/issues)
 
 
@@ -59,22 +58,21 @@ My personal portfolio
   - Plan to make it in React
 ```
 
-  ### My Projects:
-  `
-    - 1. [X] E-commerce Site (Final project for Road to Hire) 
-    - 2. [X] Website Remake MyMove (Midterm for Road to Hire)
-    - 3. [X] PMS (Project to get accepted into Road to Hire)
-    - 4. [X] Architecture Sketch remake
-    - 5. [X] Dimension Two
-    - 5. [ ] Ajax Api
-    - 6. [ ] Node Api
-    - 7. [X] React Guessing Game
-    - 8. [ ] First css challenges
-    - 9. [ ] HTML challenges
-    <!-- - 4. Avalanche (WIP, Game) 
-    - 5. Remember (WIP, App)
-    - 6. Aphonic (WIP, Album) -->
-  `
+### My Projects:
+  - 1. [X] E-commerce Site (Final project for Road to Hire) 
+  - 2. [X] Website Remake MyMove (Midterm for Road to Hire)
+  - 3. [X] PMS (Project to get accepted into Road to Hire)
+  - 4. [X] Architecture Sketch remake
+  - 5. [X] Dimension Two
+  - 5. [ ] Ajax Api
+  - 6. [ ] Node Api
+  - 7. [X] React Guessing Game
+  - 8. [ ] First css challenges
+  - 9. [ ] HTML challenges
+  <!-- - 4. Avalanche (WIP, Game) 
+  - 5. Remember (WIP, App)
+  - 6. Aphonic (WIP, Album) -->
+
 
 SK: 6LdqGnIUAAAAAN9aMUNSC6B0RNmUN0tWmLNX3hnP  
 SSK: 6LdqGnIUAAAAAEW-YU7F8PwMwPBCqPIgZJZ_Xv8c

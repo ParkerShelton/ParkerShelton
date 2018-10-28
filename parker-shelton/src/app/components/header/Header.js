@@ -22,7 +22,7 @@ class Header extends Component {
           
           <ul>
             <li onClick={this.reloadPage}><NavLink to="/contact">Contact</NavLink></li>
-            {/* <li onClick={this.reloadPage}><NavLink to="/blog">Blog</NavLink></li> */}
+            <li onClick={this.reloadPage}><NavLink to="/studentwork">Student Work</NavLink></li>
           </ul>        
         </div>
 

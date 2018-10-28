@@ -67,20 +67,6 @@
   }
 }
 
-@keyframes icons {
-  0% {
-    transform: translateY(100px);
-  }
-
-  80% {
-    transform: translateY(100px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
 @keyframes button {
   0% {
     opacity: 0;
@@ -189,24 +175,6 @@
         box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
         transform: scale(1.1);
       }      
-    }
-
-    .iconOne {
-      // transform: translateY(100px);
-      animation-name: icons;
-      animation-duration: 3.5s;     
-    }
-    .iconTwo {
-      animation-name: icons;
-      animation-duration: 4s;     
-    }
-    .iconThree {
-      animation-name: icons;
-      animation-duration: 3.2s;     
-    }
-    .iconFour {
-      animation-name: icons;
-      animation-duration: 4.2s;     
     }
 
   }

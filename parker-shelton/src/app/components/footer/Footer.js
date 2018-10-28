@@ -69,10 +69,10 @@ class Footer extends Component {
 
         <div className="row">
           <ul>
-            <li onClick={this.reloadPage}><NavLink to="/">Home</NavLink></li>
+            <li onClick={this.reloadPage}><NavLink to="/home">Home</NavLink></li>
             <li onClick={this.reloadPage}><NavLink to="/about">About</NavLink></li>
             <li onClick={this.reloadPage}><NavLink to="/contact">Contact</NavLink></li>
-            <li onClick={this.reloadPage}><NavLink to="/blog">Blog</NavLink></li>                        
+            <li onClick={this.reloadPage}><NavLink to="/studentwork">Student Work</NavLink></li>                      
           </ul>
         </div>
       </div>

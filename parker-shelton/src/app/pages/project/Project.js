@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import {Redirect} from 'react-router-dom';
 import ProjectPage from '../../components/projectPage/ProjectPage';
+import Header from '../../components/header/Header';
 import './Project.css';
 
 class Project extends Component {
@@ -15,7 +16,7 @@ class Project extends Component {
         }
       }
 
-      return <Redirect to={{ pathname: "/error"}}/>;
+      return <Redirect to={{ pathname: "/home"}}/>;
     } else {
 
       return null;
@@ -25,14 +26,16 @@ class Project extends Component {
   render() {
     return (
       <div className="Project">
+        <Header />
+
         {this.renderPage()}
 
         <div className="simpleFooter">
           <ul>
-            <li onClick={this.reloadPage}><NavLink to="/">Home</NavLink></li>
+            <li onClick={this.reloadPage}><NavLink to="/home">Home</NavLink></li>
             <li onClick={this.reloadPage}><NavLink to="/about">About</NavLink></li>
             <li onClick={this.reloadPage}><NavLink to="/contact">Contact</NavLink></li>
-            <li onClick={this.reloadPage}><NavLink to="/blog">Blog</NavLink></li>                        
+            <li onClick={this.reloadPage}><NavLink to="/studentwork">Student Work</NavLink></li>                        
           </ul>          
         </div>
       </div>

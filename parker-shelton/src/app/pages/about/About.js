@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
 import './About.css';
 
 class About extends Component {
   render() {
     return (
       <div className="About">
-
+        <Header />
+        
       {/*#########################################*/}
       {/*               TOP SECTION               */}
       {/*#########################################*/}
@@ -93,6 +96,8 @@ class About extends Component {
           <h2>Resume</h2>
           <img alt="Resume" src={"/img/about/my_resume2.jpg"} ></img>
         </section>
+
+        <Footer />
       </div>
     );
   }

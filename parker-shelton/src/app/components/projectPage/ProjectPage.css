@@ -71,41 +71,101 @@ body {
     background-color: #fff;
     color: #222629; }
 
+.Footer {
+  display: flex; }
+
 .ProjectPage {
   width: 100vw;
-  height: 100vh; }
-  .ProjectPage .hero {
+  height: 100%; }
+  .ProjectPage .heroContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    background-color: yellow; }
+    .ProjectPage .heroContainer img {
+      width: 100%;
+      border: 5px solid #000; }
+    .ProjectPage .heroContainer .heroContent {
+      position: absolute;
+      width: 50%;
+      top: 50%;
+      left: 50%;
+      margin-left: -25%;
+      margin-top: -12%;
+      padding: 30px;
+      border: 3px solid #a0e540;
+      background-color: #474b4f; }
+      .ProjectPage .heroContainer .heroContent h1 {
+        width: 100%;
+        font-size: 300%;
+        font-weight: bold;
+        text-align: center; }
+      .ProjectPage .heroContainer .heroContent p {
+        width: 90%;
+        font-size: 180%;
+        line-height: 30px;
+        text-align: center;
+        margin: auto;
+        margin-top: 30px; }
+  .ProjectPage .infoContainer {
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    height: 80vh;
+    width: 75%;
     margin: auto;
-    background-color: yellow; }
-    .ProjectPage .hero .leftHalf {
-      position: relative;
-      width: 57%;
-      background-color: blue; }
-      .ProjectPage .hero .leftHalf img {
-        width: 100%; }
-      .ProjectPage .hero .leftHalf .heroContent {
-        position: absolute;
+    margin-top: 100px;
+    margin-bottom: 100px; }
+    .ProjectPage .infoContainer .leftHalf {
+      width: 72%; }
+      .ProjectPage .infoContainer .leftHalf h2 {
+        width: 100%;
+        font-size: 300%;
+        text-align: center; }
+      .ProjectPage .infoContainer .leftHalf p {
         width: 80%;
-        top: 45%;
-        left: 50%;
-        margin-left: -40%;
-        padding: 15px;
-        border: 3px solid #a0e540;
-        background-color: #474b4f; }
-        .ProjectPage .hero .leftHalf .heroContent h1 {
-          width: 100%;
-          font-size: 50px;
-          text-align: center; }
-        .ProjectPage .hero .leftHalf .heroContent p {
-          width: 100%;
+        margin: auto;
+        font-size: 150%;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 50px; }
+    .ProjectPage .infoContainer .rightHalf {
+      width: 24%; }
+      .ProjectPage .infoContainer .rightHalf .contactInfo {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 150px;
+        margin: auto;
+        margin-top: 10px;
+        border-bottom: 3px solid #fff; }
+        .ProjectPage .infoContainer .rightHalf .contactInfo img {
+          width: 80px;
+          height: 80px;
+          align-self: center; }
+        .ProjectPage .infoContainer .rightHalf .contactInfo p {
+          color: #fff;
           font-size: 20px;
-          line-height: 26px;
           text-align: center;
-          margin-top: 20px; }
-    .ProjectPage .hero .rightHalf {
-      width: 41%;
-      background-color: blue; }
+          padding-top: 10px; }
+      .ProjectPage .infoContainer .rightHalf .contactList {
+        width: 25%;
+        margin: auto;
+        margin-top: 30px; }
+        .ProjectPage .infoContainer .rightHalf .contactList li {
+          display: flex;
+          font-size: 16px;
+          margin-top: 15px;
+          transition: transform 0.1s ease-in-out; }
+          .ProjectPage .infoContainer .rightHalf .contactList li a {
+            margin: auto; }
+          .ProjectPage .infoContainer .rightHalf .contactList li img {
+            width: 50px;
+            height: 50px;
+            margin: auto; }
+            .ProjectPage .infoContainer .rightHalf .contactList li img:hover {
+              background-color: #222629;
+              border-radius: 50%;
+              box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+              transform: scale(1.1); }

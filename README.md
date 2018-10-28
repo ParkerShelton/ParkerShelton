@@ -37,6 +37,8 @@ My personal portfolio
   RUN BOTH START AND SCSS: npm start | npm run watch-css
   npm run watch-css
 
+  HSL for green hero images: (85, 44, -15)
+
   - Buy the domain parkershelton.com
   - Have a home, about, contact, and blog tab.
   - The home will be where I show off all my projects and work
@@ -48,6 +50,7 @@ My personal portfolio
     - 2. [X] Website Remake MyMove (Midterm for Road to Hire)
     - 3. [X] PMS (Project to get accepted into Road to Hire)
     - 4. [X] Architecture Sketch remake
+    - 5. [X] Dimension Two
     - 5. [ ] Ajax Api
     - 6. [ ] Node Api
     - 7. [X] React Guessing Game
@@ -93,10 +96,10 @@ SSK: 6LdqGnIUAAAAAEW-YU7F8PwMwPBCqPIgZJZ_Xv8c
   - [X] Finish about page
 
 ## Version 3.1 ##
-  - [ ] Edit photos for each project to make a hero image for the full page.
-  - [ ] Instead of a modal, dynamically render a full page template with the project info inside.
+  - [X] Edit photos for each project to make a hero image for the full page.
+  - [X] Instead of a modal, dynamically render a full page template with the project info inside.
   - [X] Create a sketch file blueprint to layout the page template
-  - [ ] Style the project page to look nice, after the functionality is in place
+  - [X] Style the project page to look nice, after the functionality is in place
 
 
 #########################

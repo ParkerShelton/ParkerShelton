@@ -71,9 +71,6 @@ body {
     background-color: #fff;
     color: #222629; }
 
-.Footer {
-  display: none; }
-
 .Project .simpleFooter {
   position: fixed;
   display: flex;
@@ -83,7 +80,7 @@ body {
   background-color: #222629; }
   .Project .simpleFooter ul {
     display: flex;
-    width: 40%;
+    width: 50%;
     margin: auto; }
     .Project .simpleFooter ul li {
       align-self: center;

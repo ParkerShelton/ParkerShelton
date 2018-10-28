@@ -177,7 +177,7 @@ body {
     background-color: #222629; }
     .Footer .row ul {
       display: flex;
-      width: 40%;
+      width: 50%;
       margin: auto; }
       .Footer .row ul li {
         align-self: center;

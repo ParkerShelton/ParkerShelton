@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Recaptcha from 'react-recaptcha';
 import Button from '../../components/button/Button';
+import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
 import './Contact.css';
 
 class Contact extends Component {
@@ -9,7 +11,7 @@ class Contact extends Component {
 
     this.state = {
       isVerified: false,
-      showModal: false,
+      // showModal: false,
       email: {
         name: "",
         business: "",
@@ -104,15 +106,24 @@ class Contact extends Component {
     let body = `Dear Parker, \r\n ${this.state.email.message} \r\n ${ending}`;
     body = encodeURIComponent(body);
 
-    let email = `<a href="mailto:${address}?subject=${subject}&body=${body}">Send Email<a>`;
-    document.write(email);
-
-    // if(this.state.showModal) {
-    //   // return (<Modal showModal={this.state.showModal} emailMsg={email} emailBody={body} emailObj={this.state.email}/>);
+    let emailLink = `<a 
+      style="color: #000; text-decoration: none; font-size: 300%; margin-right: auto; background-color: red;" 
       
-    // } else {
-    //   return null
-    // }
+      href="mailto:${address}?subject=${subject}&body=${body}">Send Email<a>`;
+
+    let emailPage = `
+      <div style="width: 100%; height: 100%; background-color: #999; box-shadow: 0px 0px 50px 50px #999;">
+        <h1 style="width: 80%; margin: auto; font-size: 60px; text-align: center;">Thank you for getting in touch! I will respond as soon as humanly possible.</h1>
+
+        <div style="width: 25%; margin: auto; margin-top: 30px; background-color: yellow;">
+          <a style="color: #000; text-decoration: none; font-size: 300%; background-color: red;">Back</a>        
+
+          ${emailLink}
+        </div>
+      </div>
+    `;
+
+    document.write(emailPage);
   }
 
 
@@ -128,14 +139,13 @@ class Contact extends Component {
 
     return (
       <div className="Contact">
+        <Header />
+
         <div className="hero">
           <h1>Leave me a message!</h1>
           <div className="hl"></div>
           <p>I can't wait to hear from you!</p>
         </div>
-        
-        {/* {this.emailOutline()} */}
-        {/* {`mailto:${address}?subject=${subject}&body=${body}`} */}
 
         <form onSubmit={(e) => this.handleSubmit(e)}>
           {/* TOP HALF */}
@@ -202,6 +212,7 @@ class Contact extends Component {
           </div>
         </form>        
 
+        <Footer />
       </div>
     );
   }

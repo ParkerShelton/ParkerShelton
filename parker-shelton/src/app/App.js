@@ -6,11 +6,9 @@ import './App.css';
 import Intro from './pages/intro/Intro';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
-import Contact from './pages/contact/Contact';   
+import Contact from './pages/contact/Contact';
+import StudentWork from './pages/studentWork/StudentWork';
 import Error from './pages/error/Error';
-  
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
 
 import Project from './pages/project/Project';
 
@@ -21,9 +19,9 @@ class App extends Component {
     this.state = {
       selectedProject: {
         id: null,
-        name: null,
-        img: [],
-        desc: null
+        // name: null,
+        // img: [],
+        // desc: null
       },
       projectList: projects
     }
@@ -33,9 +31,9 @@ class App extends Component {
     this.setState({
       selectedProject: {
         id: project.id,
-        name: project.name,
-        img: project.img,
-        desc: project.desc
+        // name: project.name,
+        // img: project.img,
+        // desc: project.desc
       }
     });
   }
@@ -44,16 +42,14 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Route path="/" render={(props) => (props.location.pathname !== "/") && <Header/>} />
 
           <Route exact path="/" component={Intro}/>
           <Route exact path="/home" render={() => <Home selectProject={this.selectProject} projects={this.state.projectList}/>}/>
           <Route exact path="/about" component={About}/>
           <Route exact path="/contact" component={Contact}/>
+          <Route exact path="/studentwork" render={() => <StudentWork selectProject={this.selectProject} projects={this.state.projectList}/>}/>
           <Route exact path="/projects/:projName" render={props => <Project {...props} selectedProject={this.state.selectedProject} projects={this.state.projectList}/>}/>
           <Route path="/error" component={Error} />
-
-          <Route path="/" render={(props) => (props.location.pathname !== "/") && <Footer/>} />        
 
         </div>
       </BrowserRouter>

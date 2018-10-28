@@ -87,12 +87,14 @@ body {
       justify-content: space-around;
       width: 35%; }
       .Header .headerContainer ul li {
+        display: flex;
+        justify-content: center;
         align-self: center;
-        width: 30%;
-        height: 30px;
+        width: 35%;
         font-size: 25px;
         font-weight: bold;
         text-align: center;
+        overflow: hidden;
         color: #fff; }
     .Header .headerContainer img {
       width: 150px;

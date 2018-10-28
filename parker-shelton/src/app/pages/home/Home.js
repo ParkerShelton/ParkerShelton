@@ -1,21 +1,15 @@
 import React, { Component } from 'react';
-import Project from '../../components/project/Project';
-// import Modal from '../../components/modal/Modal';  
+import ProjectCard from '../../components/projectCard/ProjectCard';
+import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
 import './Home.css';
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      selectedProj: null,
-    }
-  }
 
   renderProjects = () => {
     if(this.props.projects !== null) {
-      let projectList = this.props.projects.map((project) => {
-        return <Project selectProject={this.props.selectProject} key={project.name} project={project}/>
+      let projectList = this.props.projects.filter(project => project.studentWork === false).map((project) => {
+        return <ProjectCard selectProject={this.props.selectProject} key={project.name} project={project}/>
       });
       return projectList;
       
@@ -27,6 +21,8 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
+        <Header />
+
         <div className="hero">
           <h1>Parker Shelton</h1>
 
@@ -45,6 +41,7 @@ class Home extends Component {
           </ul>
         </div>
 
+        <Footer />
       </div>
     );
   }

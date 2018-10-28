@@ -1,6 +1,6 @@
 # Parker Shelton Portfolio
 
-![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)
+![GitHub version](https://img.shields.io/badge/version-4.0.1-blue.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg)
 [![GitHub license](https://img.shields.io/github/license/ParkerShelton/ParkerShelton.svg)](https://github.com/ParkerShelton/ParkerShelton)
 [![GitHub issues](https://img.shields.io/github/issues/ParkerShelton/ParkerShelton.svg)](https://github.com/ParkerShelton/ParkerShelton/issues)
